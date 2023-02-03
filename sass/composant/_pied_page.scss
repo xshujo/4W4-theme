@@ -1,0 +1,11 @@
+.site__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // On peut mettre les enfants d'une balise à l'intérieur du sélecteur
+    section {
+        flex: 1 1 200px;
+        border: 1px solid #aaa;
+    }
+}

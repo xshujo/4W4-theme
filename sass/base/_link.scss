@@ -1,0 +1,13 @@
+a {
+    color: #888;
+    // Ici, "&" reprend le "a"
+    &:visited {
+        color: rgb(76, 88, 135);
+    }
+    // "hover" doit être mis après "visited" sinon les liens visités ne changent
+    // pas de couleur au survol
+    &:hover {
+        color: #555;
+    }
+    
+}
