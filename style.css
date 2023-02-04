@@ -381,11 +381,16 @@ a:hover {
 
 /* --------------------------------------------- composant */
 .site__footer {
+  width: 100%;
+  background-color: #414141;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .site__footer section {
+  width: 100%;
   flex: 1 1 200px;
-  border: 1px solid #aaa;
+  height: 12rem;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

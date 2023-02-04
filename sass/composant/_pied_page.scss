@@ -1,11 +1,17 @@
 .site__footer {
+    width: 100%;
+    
+    background-color: #414141;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
     // On peut mettre les enfants d'une balise à l'intérieur du sélecteur
     section {
+        width: 100%;
         flex: 1 1 200px;
-        border: 1px solid #aaa;
+        height: 12rem;
+        padding: 1rem;
     }
 }
