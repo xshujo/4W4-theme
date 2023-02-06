@@ -380,6 +380,18 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 35, 85);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+}
+
 .site__footer {
   width: 100%;
   background-color: #414141;
