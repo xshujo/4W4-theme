@@ -373,29 +373,44 @@ a {
   color: #888;
 }
 a:visited {
-  color: rgb(76, 88, 135);
+  color: rgb(62, 85, 177);
 }
 a:hover {
   color: #555;
 }
 
 /* --------------------------------------------- composant */
+.site__header {
+  margin: 0;
+}
+
+.site__header__logo {
+  color: #fff;
+  background-color: #222;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 35, 85);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
+  padding: 5px 20px;
 }
 
 .site__footer {
   width: 100%;
   background-color: #414141;
   color: #fff;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
