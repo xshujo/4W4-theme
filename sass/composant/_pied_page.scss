@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 3rem;
 
     // On peut mettre les enfants d'une balise à l'intérieur du sélecteur
     /* --------------------------------------------- Sections du pied de page */
@@ -15,6 +16,5 @@
         width: 100%;
         flex: 1 1 200px;
         height: 12rem;
-        padding: 1rem;
     }
 }

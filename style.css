@@ -322,17 +322,21 @@ template {
 }
 
 /* --------------------------------------------- base */
+html {
+  overflow-x: hidden;
+}
+
 /*
   CSS font-size clamp generator
   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
 */
 /* ------------------------------------------------------ Polices de l'entête */
 h1 {
-  font-size: clamp(0.875rem, -2.0938rem + 9.5vw, 3.25rem);
+  font-size: clamp(1rem, -2.0938rem + 9.5vw, 3.25rem);
 }
 
 h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  font-size: clamp(0.75rem, -1.4375rem + 7vw, 2.5rem);
 }
 
 h3 {
@@ -377,7 +381,9 @@ p {
 
 /* --------------------------------------------------------------------- Body */
 body {
-  background-color: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
 }
 
 /* -------------------------------------------------------------------- Liens */
@@ -396,6 +402,12 @@ a:hover {
 .site__header {
   margin: 0;
 }
+.site__header h1 {
+  margin: 3rem 3rem 0 3rem;
+}
+.site__header h2 {
+  margin: 0 3rem;
+}
 
 /* --------------------------------------------------------------------- Logo */
 .site__header__logo {
@@ -409,8 +421,12 @@ a:hover {
 }
 
 /* -------------------------------------------------------------- menu-entete */
+.menu-entete-container {
+  padding-right: 3rem;
+}
 .menu-entete-container .menu {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: flex-end;
 }
@@ -418,8 +434,26 @@ a:hover {
   color: rgb(0, 35, 85);
 }
 .menu-entete-container .menu .menu-item a {
+  font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
   display: block;
   padding: 5px 20px;
+}
+
+main {
+  margin: 0 4rem 3rem 3rem;
+}
+main section {
+  background-color: #fff;
+  font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 0;
+}
+main section h1 {
+  font-size: clamp(0.75rem, -1.125rem + 6vw, 2.25rem);
+}
+main section hr {
+  margin-top: 2rem;
+  border: 0.25px solid #909090;
 }
 
 /* ------------------------------------------------------------- Pied de page */
@@ -432,11 +466,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 3rem;
   /* --------------------------------------------- Sections du pied de page */
 }
 .site__footer section {
   width: 100%;
   flex: 1 1 200px;
   height: 12rem;
-  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

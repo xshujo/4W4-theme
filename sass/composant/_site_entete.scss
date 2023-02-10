@@ -1,6 +1,14 @@
 /* ------------------------------------------------------------------- Entête */
 .site__header {
     margin: 0;
+
+    h1 {
+        margin: 3rem 3rem 0 3rem;
+    }
+
+    h2 {
+        margin: 0 3rem;
+    }
 }
 
 /* --------------------------------------------------------------------- Logo */
@@ -15,8 +23,10 @@
 }
 /* -------------------------------------------------------------- menu-entete */
 .menu-entete-container { // nav
+    padding-right: 3rem;
     .menu { //ul
         display: flex;
+        flex-wrap: wrap;
         list-style-type: none;
         justify-content: flex-end;
 
@@ -24,6 +34,7 @@
             color: rgb(0, 35, 85);
 
             a {
+                font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);;
                 display: block;
                 padding: 5px 20px;
             }

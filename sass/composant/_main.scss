@@ -1,0 +1,19 @@
+main {
+    margin: 0 4rem 3rem 3rem;
+
+    section {
+        background-color: #fff;
+        font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1rem 0;
+
+        h1 {
+            font-size: clamp(0.75rem, -1.125rem + 6vw, 2.25rem);
+        }
+
+        hr {
+            margin-top: 2rem;
+            border: 0.25px solid #909090;
+        }
+    }
+}
