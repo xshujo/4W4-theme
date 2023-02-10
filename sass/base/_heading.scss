@@ -1,3 +1,7 @@
+/*
+  CSS font-size clamp generator
+  https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
+*/
 h1 {
   font-size: clamp(0.875rem, -2.0938rem + 9.5vw, 3.25rem);
 }
