@@ -327,8 +327,13 @@ html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: aqua;
 }
 
+/* Pour débuguer */
+/** {
+    outline: solid #f00 1px !important;
+}*/
 /*
   CSS font-size clamp generator
   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
@@ -384,7 +389,7 @@ p {
 
 /* --------------------------------------------------------------------- Body */
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: rgb(255, 255, 255);
 }
