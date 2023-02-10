@@ -323,7 +323,10 @@ template {
 
 /* --------------------------------------------- base */
 html {
+  width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -458,7 +461,7 @@ main section hr {
 
 /* ------------------------------------------------------------- Pied de page */
 .site__footer {
-  width: 100%;
+  width: 100vw;
   background: rgb(63, 63, 63);
   background: linear-gradient(0deg, rgb(63, 63, 63) 0%, rgb(109, 109, 109) 100%);
   color: #fff;
@@ -466,11 +469,11 @@ main section hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 3rem;
   /* --------------------------------------------- Sections du pied de page */
 }
 .site__footer section {
   width: 100%;
   flex: 1 1 200px;
   height: 12rem;
+  margin: 3rem;
 }/*# sourceMappingURL=style.css.map */

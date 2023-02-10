@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------- Pied de page */
 .site__footer {
-    width: 100%;
+    width: 100vw;
     background: rgb(63,63,63);
     background: linear-gradient(0deg, rgba(63,63,63,1) 0%, rgba(109,109,109,1) 100%);
     color: #fff;
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 3rem;
+    // padding: 3rem;
 
     // On peut mettre les enfants d'une balise à l'intérieur du sélecteur
     /* --------------------------------------------- Sections du pied de page */
@@ -16,5 +16,6 @@
         width: 100%;
         flex: 1 1 200px;
         height: 12rem;
+        margin: 3rem;
     }
 }
