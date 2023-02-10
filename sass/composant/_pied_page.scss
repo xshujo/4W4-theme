@@ -1,3 +1,4 @@
+/* ------------------------------------------------------------- Pied de page */
 .site__footer {
     width: 100%;
     background: rgb(63,63,63);
@@ -9,6 +10,7 @@
     flex-wrap: wrap;
 
     // On peut mettre les enfants d'une balise à l'intérieur du sélecteur
+    /* --------------------------------------------- Sections du pied de page */
     section {
         width: 100%;
         flex: 1 1 200px;

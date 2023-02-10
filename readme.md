@@ -5,6 +5,7 @@
 - Ajout d'un logo
 - Modification de l'entête et du pied de page
 - Déploiement du site sur Siteground
+- Ajout de commentaires
 
 #### Références
 - https://developer.wordpress.org/themes/

@@ -11,6 +11,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 2023-4w4
 */
+/* ---------------------------------------- Importation des feuilles de style */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -321,6 +322,11 @@ template {
 }
 
 /* --------------------------------------------- base */
+/*
+  CSS font-size clamp generator
+  https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
+*/
+/* ------------------------------------------------------ Polices de l'entête */
 h1 {
   font-size: clamp(0.875rem, -2.0938rem + 9.5vw, 3.25rem);
 }
@@ -369,6 +375,12 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/* --------------------------------------------------------------------- Body */
+body {
+  background-color: aliceblue;
+}
+
+/* -------------------------------------------------------------------- Liens */
 a {
   color: #888;
 }
@@ -380,10 +392,12 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
+/* ------------------------------------------------------------------- Entête */
 .site__header {
   margin: 0;
 }
 
+/* --------------------------------------------------------------------- Logo */
 .site__header__logo {
   color: #fff;
   background: rgb(19, 19, 19);
@@ -394,6 +408,7 @@ a:hover {
   align-items: center;
 }
 
+/* -------------------------------------------------------------- menu-entete */
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
@@ -407,6 +422,7 @@ a:hover {
   padding: 5px 20px;
 }
 
+/* ------------------------------------------------------------- Pied de page */
 .site__footer {
   width: 100%;
   background: rgb(63, 63, 63);
@@ -416,6 +432,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* --------------------------------------------- Sections du pied de page */
 }
 .site__footer section {
   width: 100%;
