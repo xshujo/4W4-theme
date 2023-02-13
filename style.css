@@ -404,6 +404,35 @@ a:hover {
   color: #555;
 }
 
+/* Les balises qu'on utilise dans la conversion des fichiers markdown */
+/* ------------------------------------------------------------------- Listes */
+main ul, main ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main ul > li,
+main ol > li {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+/* ---------------------------------------------------------------------- Pre */
+pre {
+  background-color: rgb(219, 226, 219);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+code {
+  background-color: rgb(219, 226, 219);
+}
+
 /* --------------------------------------------- composant */
 /* ------------------------------------------------------------------- Entête */
 .site__header {
@@ -462,6 +491,9 @@ main section hr {
   margin-top: 2rem;
   border: 0.25px solid #909090;
 }
+main hr:last-of-type {
+  display: none;
+}
 
 /* ------------------------------------------------------------- Pied de page */
 .site__footer {
@@ -480,4 +512,22 @@ main section hr {
   flex: 1 1 200px;
   height: 12rem;
   margin: 3rem;
+}
+
+.blocflex {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.blocflex article {
+  height: 250px;
+  flex: 1 1 200px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -16,4 +16,8 @@ main {
             border: 0.25px solid #909090;
         }
     }
+
+    hr:last-of-type {
+        display: none;
+    }
 }

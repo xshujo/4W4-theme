@@ -1,0 +1,40 @@
+/* Les balises qu'on utilise dans la conversion des fichiers markdown */
+/* ------------------------------------------------------------------- Listes */
+main ul, main ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main ul > li,
+main ol > li {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+ul > li {}
+
+ol > li {}
+
+/* ---------------------------------------------------------------------- Pre */
+pre {
+    background-color: rgb(219, 226, 219);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+code {}
+
+i {}
+
+blockquote {}
+
+hr {
+    margin: 3rem 0;
+}
+
+strong {}
+
+code {
+    background-color: rgb(219, 226, 219);
+}
