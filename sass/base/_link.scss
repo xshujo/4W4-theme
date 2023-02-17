@@ -1,14 +1,22 @@
 /* -------------------------------------------------------------------- Liens */
 a {
     color: #888;
+    
     // Ici, "&" reprend le "a"
     &:visited {
         color: rgb(212, 125, 122);
     }
+    
     // "hover" doit être mis après "visited" sinon les liens visités ne changent
     // pas de couleur au survol
     &:hover {
         color: #555;
     }
-    
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:link {
+        text-decoration: none;
+    }
 }

@@ -17,7 +17,7 @@
                     </h1>
                     <?php // the_content(); // Affiche le contenu de l'article au comlet ?>
                     <?php // the_excerpt() // Affiche un résumé de l'article ?>
-                    <p><?= wp_trim_words(get_the_excerpt(), 10, " &#10148;") ?></p>
+                    <p><?= wp_trim_words(get_the_excerpt(), 10, "... &#10148;") ?></p>
                     <!-- <hr> -->
                 </article>
                 <?php

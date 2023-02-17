@@ -1,12 +1,11 @@
-# Exercice 1
-## 4W4 - Conception d'interfaces et développement Web
-### Auteur : Taïsha Dorval-Mbele
-### Site: https://cidweb6.sg-host.com/
+# Lab #3
+## 4w4 - Conception d'interface et développement Web
+### Auteur: Taïsha Dorval-Mbele
 #### Description
-- Ajout d'un logo
-- Modification de l'entête et du pied de page
-- Déploiement du site sur Siteground
-- Ajout de commentaires
-
+- Améliorer la classe .blocflex
+- Création du modèle category.php
+- Améliorer l'affichage des articles « markdown »
 #### Références
+- https://github.com/xshujo
 - https://developer.wordpress.org/themes/
+- http://cidweb6.sg-host.com/
