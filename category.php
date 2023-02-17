@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-    <!-- <h3>front-page.php</h3> -->
+    <!-- <h3>category.php</h3> -->
     <section class="blocflex">
         <?php
             // ":" + "endif" remplacent "{}"
@@ -17,8 +17,7 @@
                     </h1>
                     <?php // the_content(); // Affiche le contenu de l'article au comlet ?>
                     <?php // the_excerpt() // Affiche un résumé de l'article ?>
-                    <p><?php if (is_category('cours')) {echo "cours";} ?></p>
-                    <p><?= wp_trim_words(get_the_excerpt(), 10, "... <span>&#10148;</span>") ?></p>
+                    <p><?= wp_trim_words(get_the_excerpt(), 10, " &#10148;") ?></p>
                     <!-- <hr> -->
                 </article>
                 <?php
