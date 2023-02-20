@@ -468,6 +468,35 @@ code {
   margin-left: 3rem;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+form input {
+  height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  border: 0px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-left: 1rem;
+  outline: none;
+}
+form button {
+  background-color: #fff;
+  border: 0px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-right: 1rem;
+}
+
 /* --------------------------------------------------------------------- Logo */
 .site__header__logo {
   color: #fff;
@@ -477,17 +506,21 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
 }
 
 /* -------------------------------------------------------------- menu-entete */
-.menu-entete-container {
-  padding-right: 5rem;
-}
 .menu-entete-container .menu {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding-right: 1rem;
+  column-gap: 3rem;
+  row-gap: 1rem;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 35, 85);
@@ -495,7 +528,7 @@ code {
 .menu-entete-container .menu .menu-item a {
   font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
   display: block;
-  padding: 5px 20px;
+  margin: 0;
 }
 
 main {

@@ -17,6 +17,37 @@
     }
 }
 
+.logomenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+
+    input {
+        height: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.875rem;
+        border: 0px;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        padding-left: 1rem;
+        outline: none;
+    }
+
+    button {
+        background-color: #fff;
+        border: 0px;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 /* --------------------------------------------------------------------- Logo */
 .site__header__logo {
     color: #fff;
@@ -26,19 +57,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
 }
 
 /* -------------------------------------------------------------- menu-entete */
 .menu-entete-container {
-    // nav
-    padding-right: 5rem;
-
+    //nav
     .menu {
         //ul
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        padding-right: 1rem;
+        column-gap: 3rem;
+        row-gap: 1rem;
 
         .menu-item {
             //li
@@ -48,7 +84,8 @@
                 font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
                 ;
                 display: block;
-                padding: 5px 20px;
+                margin: 0;
+                // padding: 5px 20px;
             }
         }
     }
