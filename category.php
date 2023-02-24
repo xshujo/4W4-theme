@@ -4,27 +4,28 @@
      */
 ?>
 <?php get_header(); ?>
-<main>
-    <!-- <h3>category.php</h3> -->
-    <section class="blocflex">
-        <?php
-            // ":" + "endif" remplacent "{}"
-            if (have_posts()):
-                while (have_posts()) : the_post();?>
-                <article>
-                    <h1>
-                        <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-                    </h1>
-                    <?php // the_content(); // Affiche le contenu de l'article au comlet ?>
-                    <?php // the_excerpt() // Affiche un résumé de l'article ?>
-                    <p><?= wp_trim_words(get_the_excerpt(), 10, "... &#10148;") ?></p>
-                    <!-- <hr> -->
-                </article>
-                <?php
-                endwhile;
-            endif;
-        ?>
-    </section>
-    
+
+<!------------------------------------------------------------------------------>
+<main class="site__main">
+   <section class="blocflex">
+      <?php
+      $category = get_queried_object();
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+      $query = new WP_Query( $args );
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
+            <article>
+               <h4><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h4>
+               <p><?= wp_trim_words(get_the_excerpt(), 15, "... <span>&#10148;</span>") ?></p>
+            </article>
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
 </main>
+
 <?php get_footer(); ?>

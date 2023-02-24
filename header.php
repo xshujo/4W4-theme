@@ -10,13 +10,13 @@
 <body>
     <header class="site__header">
         <section class="site__header__logo">
-            <div class="logomenu">
+            <!-- <div class="logomenu"> -->
                 <?php the_custom_logo() ?>
                 <?php wp_nav_menu(array(
                     "menu" => "entete",
                     "container" => "nav"
                 )) ?>
-            </div>
+            <!-- </div> -->
             <?php get_search_form(); ?>
         </section>
         <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>

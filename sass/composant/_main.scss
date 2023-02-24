@@ -1,5 +1,7 @@
 main {
-    margin: 0 6rem 3rem 5rem;
+    margin-top: clamp(1rem, -1.5rem + 8vw, 3rem);
+    margin-left: clamp(1rem, -4rem + 16vw, 5rem);
+    margin-right: clamp(1rem, -5.25rem + 20vw, 6rem);
 
     section {
         background-color: #fff;
