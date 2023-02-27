@@ -19,7 +19,15 @@
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
             <article>
-               <h4><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h4>
+               <?php
+                  $titre = get_the_title();
+
+                  if ($category->slug == 'cours')
+                  {
+                     $titre = substr($titre, 0, 7);
+                  }
+               ?>
+               <h4><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h4>
                <p><?= wp_trim_words(get_the_excerpt(), 15, "... <span>&#10148;</span>") ?></p>
             </article>
          <?php endwhile; ?>
