@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="site">
     <header class="site__header">
         <section class="site__header__logo">
             <!-- <div class="logomenu"> -->
