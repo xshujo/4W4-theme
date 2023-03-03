@@ -15,7 +15,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+   h4, h5, p {
+    margin: 1rem;
+   }
 }
 
-.blocflex__galerie {}
+.blocflex__galerie {
+  border: none !important;
+}

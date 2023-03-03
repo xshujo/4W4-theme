@@ -1,7 +1,7 @@
     <footer class="site__footer">
-        <section>Colonne 1</section>
-        <section>Colonne 2</section>
-        <section>Colonne 3</section>
+        <section><a href="http://cidweb6.sg-host.com/">SiteGround</a></section>
+        <section><a href="https://github.com/xshujo">GitHub</a></section>
+        <section><a href="https://github.com/xshujo/4W4-theme">Dépôt Git</a></section>
     </footer>
     <?php wp_footer(); ?>
 </body>
