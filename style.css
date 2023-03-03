@@ -611,14 +611,15 @@ form button {
 }
 main {
   margin-top: clamp(1rem, -1.5rem + 8vw, 3rem);
-  margin-left: clamp(1rem, -4rem + 16vw, 5rem);
   margin-right: clamp(1rem, -5.25rem + 20vw, 6rem);
+  margin-left: clamp(1rem, -4rem + 16vw, 5rem);
 }
 main section {
   background-color: #fff;
   font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1rem 0;
+  padding: 0;
+  margin: 0;
 }
 main section h1 {
   font-size: clamp(0.5rem, -0.75rem + 4vw, 1.5rem);
@@ -658,13 +659,20 @@ main hr:last-of-type {
 }
 
 .blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 .blocflex article {
+  height: 250px;
+  flex: 1 1 300px;
   border: 1px solid #aaa;
-  padding: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }
 
 .blocflex__article {
@@ -672,20 +680,33 @@ main hr:last-of-type {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  order: 1;
 }
-.blocflex__article h4, .blocflex__article h5, .blocflex__article p {
+.blocflex__article h4,
+.blocflex__article h5,
+.blocflex__article p {
   margin: 1rem;
 }
 
 .blocflex__galerie {
+  height: 100% !important;
   border: none !important;
+  order: 0;
+  flex: 1 1 100% !important;
+}
+.blocflex__galerie:hover {
+  box-shadow: none;
+}
+.blocflex__galerie figure {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
 }
 
 /* --------------------------------------------- layout */
 /* Mise en page général avec display grid */
 .site__header {
   grid-area: header;
-  background-color: antiquewhite;
 }
 
 .site__main {
@@ -696,19 +717,32 @@ main hr:last-of-type {
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
 }
 
 .site__aside {
   grid-area: aside;
+  margin-top: clamp(1rem, -1.5rem + 8vw, 3rem);
+  margin-left: clamp(1rem, -4rem + 16vw, 5rem);
+}
+.site__aside h3 {
+  margin-top: 0;
+}
+.site__aside ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.site__aside ul li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .site {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
-  background-color: rgb(191, 232, 255);
+  row-gap: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .site {
