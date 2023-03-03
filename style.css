@@ -667,11 +667,17 @@ main hr:last-of-type {
   padding: 1rem;
 }
 
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* --------------------------------------------- layout */
 /* Mise en page général avec display grid */
 .site__header {
   grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: antiquewhite;
 }
 
