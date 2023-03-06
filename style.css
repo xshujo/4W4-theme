@@ -462,7 +462,110 @@ code {
   margin: 0;
   padding: 0;
 }
+.site__header section {
+  background: linear-gradient(0deg, rgb(19, 19, 19) 0%, rgb(35, 35, 35) 100%);
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-areas: "logo menu" "recherche recherche";
+}
+.site__header section a {
+  grid-area: logo;
+  margin-left: clamp(1rem, -2.75rem + 12vw, 4rem);
+}
+.site__header section nav {
+  grid-area: menu;
+  margin-right: clamp(1rem, -4rem + 16vw, 5rem);
+  margin-left: 1rem;
+}
+.site__header section nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 0;
+}
+.site__header section nav ul li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+  list-style: none;
+}
+.site__header section nav ul li a {
+  margin: 0;
+}
+.site__header section form {
+  grid-area: recherche;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.site__header section form input {
+  height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  border: 0px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-left: 1rem;
+  outline: none;
+}
+.site__header section form button {
+  height: 2rem;
+  background-color: #fff;
+  border: 0px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-right: 1rem;
+}
 
+/* ----------------------------------------------- Media query pour tablettes */
+@media screen and (min-width: 576px) {
+  .site__header section nav {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 1rem;
+  }
+  .site__header section nav ul {
+    display: block;
+    column-count: 2;
+    column-gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .site__header section nav ul li {
+    margin-bottom: 2rem;
+  }
+}
+/* --------------------------------------------- Media query pour ordinateurs */
+@media screen and (min-width: 1024px) {
+  .site__header section {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site__header section nav {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .site__header section nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2.5rem;
+    margin-top: 0;
+  }
+  .site__header section nav ul li {
+    margin-bottom: 0;
+  }
+  .site__header section nav ul li a {
+    margin: 0;
+  }
+  .site__header section form {
+    margin-top: 0;
+    margin-right: clamp(1rem, -4rem + 16vw, 5rem);
+    margin-left: auto;
+  }
+}
 /* ------------------------------------------------------------- Pied de page */
 .site__footer {
   width: 100vw;
