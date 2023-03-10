@@ -472,10 +472,22 @@ code {
   grid-area: logo;
   margin-left: clamp(1rem, -2.75rem + 12vw, 4rem);
 }
+.site__header section #checkMenu {
+  display: none;
+}
+.site__header section #checkMenu:checked ~ nav {
+  transform: translateY(0);
+  transition: transform 0.75s;
+}
 .site__header section nav {
   grid-area: menu;
   margin-right: clamp(1rem, -4rem + 16vw, 5rem);
   margin-left: 1rem;
+  position: absolute;
+  right: 0;
+  top: 50;
+  transform: translateY(-100%);
+  transition: transform 0.75s;
 }
 .site__header section nav ul {
   display: flex;
@@ -500,6 +512,7 @@ code {
   justify-content: center;
 }
 .site__header section form input {
+  width: 7rem;
   height: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
@@ -583,6 +596,15 @@ code {
   flex: 1 1 200px;
   height: 10rem;
   margin: 3rem clamp(1rem, -4rem + 16vw, 5rem);
+}
+
+.burger {
+  width: 2rem;
+  background-color: transparent;
+  border: 0px;
+}
+.burger img {
+  filter: invert(1);
 }
 
 /* --------------------------------------------- layout *//*# sourceMappingURL=style.css.map */

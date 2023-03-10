@@ -18,10 +18,24 @@
             margin-left: clamp(1rem, -2.75rem + 12vw, 4rem);
         }
 
+        #checkMenu {
+            display: none;
+        }
+
+        #checkMenu:checked ~ nav {
+            transform: translateY(0);
+            transition: transform 0.75s;
+        }
+
         nav {
             grid-area: menu;
             margin-right: clamp(1rem, -4rem + 16vw, 5rem);
             margin-left: 1rem;
+            position: absolute;
+            right: 0;
+            top: 50;
+            transform: translateY(-100%);
+            transition: transform 0.75s;
 
             ul {
                 display: flex;
@@ -50,6 +64,7 @@
             justify-content: center;
 
             input {
+                width: 7rem;
                 height: 2rem;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 0.875rem;
@@ -73,7 +88,7 @@
 }
 
 /* ----------------------------------------------- Media query pour tablettes */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: $largeur__tablette) {
     .site__header {
 
         // header
@@ -99,7 +114,7 @@
 }
 
 /* --------------------------------------------- Media query pour ordinateurs */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $largeur__bureau) {
     .site__header {
 
         // header    
